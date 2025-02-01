@@ -54,7 +54,7 @@ const Profile = () => {
   };
 
   const handleCardClick = (itemId) => {
-    navigate(`/item/${itemId}`); // Navigate to the item details page
+    navigate(`/item/${itemId}`); 
   };
 
   if (loading) {

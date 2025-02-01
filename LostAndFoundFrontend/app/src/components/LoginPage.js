@@ -9,12 +9,12 @@ const LoginPage = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { setToken, setIsAuthenticated } = useAuth(); // object de-structuring
+  const { setToken, setIsAuthenticated } = useAuth(); 
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(""); // Clear previous errors
+    setError(""); 
 
     try {
       const response = await axios.post("http://localhost:8081/public/login", {
@@ -24,7 +24,7 @@ const LoginPage = () => {
       // response.data is a string. So, if u want to store it in a variable do it as const token = response.data not like const {token} = response.data, we don't need to destructure as backend returns only a string
       setToken(response.data);
       setIsAuthenticated(true);
-      localStorage.setItem("accessToken", response.data); // Save token for future requests
+      localStorage.setItem("accessToken", response.data); 
       navigate("/"); 
     } catch (err) {
       console.log(err);

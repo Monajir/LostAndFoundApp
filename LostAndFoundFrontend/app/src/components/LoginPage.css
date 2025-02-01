@@ -20,13 +20,13 @@
 .login-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e293b; /* Darker text for better contrast */
+  color: #1e293b; 
   margin-bottom: 0.5rem;
 }
 
 .login-subtitle {
   font-size: 0.875rem;
-  color: #64748b; /* Gray text for subtitle */
+  color: #64748b; 
   margin-bottom: 1.5rem;
 }
 
@@ -69,7 +69,7 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #3b82f6; /* Focus border color */
+  border-color: #3b82f6; 
 }
 
 .submit-button {
