@@ -1,0 +1,107 @@
+/* Profile.css */
+.profile-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .user-info {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+  
+  .user-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #475569;
+  }
+  
+  .delete-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .uploaded-items {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .uploaded-items h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+  
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .item-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .item-card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #1e293b;
+  }
+  
+  .item-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #64748b;
+  }
+  
+  .custom-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #475569;
+  }
